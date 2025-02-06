@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import csrot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-csrot@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-base-wasm-csrot/tags). For example,
+
+```javascript
 import csrot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-csrot@v0.0.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { Module } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-csrot@v0.0.0-esm/index.mjs';
+import { Module } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-csrot@esm/index.mjs';
 ```
 
 #### csrot.main( N, cx, strideX, cy, strideY, c, s )
@@ -273,7 +278,7 @@ import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.m
 import bytesPerElement from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-bytes-per-element@esm/index.mjs';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
 import reinterpretComplex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-reinterpret-complex64@esm/index.mjs';
-import csrot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-csrot@v0.0.0-esm/index.mjs';
+import csrot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-csrot@esm/index.mjs';
 
 // Create a new memory instance with an initial size of 10 pages (320KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -347,7 +352,7 @@ import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.m
 import bytesPerElement from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-bytes-per-element@esm/index.mjs';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
 import reinterpretComplex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-reinterpret-complex64@esm/index.mjs';
-import csrot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-csrot@v0.0.0-esm/index.mjs';
+import csrot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-csrot@esm/index.mjs';
 
 // Create a new memory instance with an initial size of 10 pages (320KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -440,7 +445,7 @@ import ones from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-ones@esm/index.mjs
 import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.mjs';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
 import reinterpretComplex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-reinterpret-complex64@esm/index.mjs';
-import csrot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-csrot@v0.0.0-esm/index.mjs';
+import csrot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-csrot@esm/index.mjs';
 
 // Specify a vector length:
 var N = 5;
