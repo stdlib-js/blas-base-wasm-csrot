@@ -35,38 +35,32 @@ limitations under the License.
 
 > Apply a plane rotation.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-base-wasm-csrot
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-csrot = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-csrot-wasm@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var csrot = require( 'path/to/vendor/umd/blas-base-csrot-wasm/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-csrot-wasm@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.csrot;
-})();
-</script>
+var csrot = require( '@stdlib/blas-base-wasm-csrot' );
 ```
 
 #### csrot.main( N, cx, strideX, cy, strideY, c, s )
@@ -291,7 +285,7 @@ var zeros = require( '@stdlib/array-zeros' );
 var bytesPerElement = require( '@stdlib/ndarray-base-bytes-per-element' );
 var Complex64Array = require( '@stdlib/array-complex64' );
 var reinterpretComplex64 = require( '@stdlib/strided-base-reinterpret-complex64' );
-var csrot = require( '@stdlib/blas-base-csrot-wasm' );
+var csrot = require( '@stdlib/blas-base-wasm-csrot' );
 
 // Create a new memory instance with an initial size of 10 pages (320KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -365,7 +359,7 @@ var zeros = require( '@stdlib/array-zeros' );
 var bytesPerElement = require( '@stdlib/ndarray-base-bytes-per-element' );
 var Complex64Array = require( '@stdlib/array-complex64' );
 var reinterpretComplex64 = require( '@stdlib/strided-base-reinterpret-complex64' );
-var csrot = require( '@stdlib/blas-base-csrot-wasm' );
+var csrot = require( '@stdlib/blas-base-wasm-csrot' );
 
 // Create a new memory instance with an initial size of 10 pages (320KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -446,19 +440,14 @@ The function has the following additional parameters:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-wasm-support@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-ones@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-reinterpret-complex64@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-csrot-wasm@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var hasWebAssemblySupport = require( '@stdlib/assert-has-wasm-support' );
+var oneTo = require( '@stdlib/array-one-to' );
+var ones = require( '@stdlib/array-ones' );
+var zeros = require( '@stdlib/array-zeros' );
+var Complex64Array = require( '@stdlib/array-complex64' );
+var reinterpretComplex64 = require( '@stdlib/strided-base-reinterpret-complex64' );
+var csrot = require( '@stdlib/blas-base-wasm-csrot' );
 
 // Specify a vector length:
 var N = 5;
@@ -478,11 +467,6 @@ console.log( reinterpretComplex64( cx, 0 ) );
 
 console.log( reinterpretComplex64( cy, 0 ) );
 // => <Float32Array>[ ~0.2, ~-0.4, -1.0, ~-1.6, ~-2.2, ~-2.8, ~-3.4, -4.0, ~-4.6, ~-5.2 ]
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -523,7 +507,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -533,19 +517,19 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/blas-base-csrot-wasm.svg
-[npm-url]: https://npmjs.org/package/@stdlib/blas-base-csrot-wasm
+[npm-image]: http://img.shields.io/npm/v/@stdlib/blas-base-wasm-csrot.svg
+[npm-url]: https://npmjs.org/package/@stdlib/blas-base-wasm-csrot
 
-[test-image]: https://github.com/stdlib-js/blas-base-csrot-wasm/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/blas-base-wasm-csrot/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/actions/workflows/test.yml?query=branch:main
 
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-base-csrot-wasm/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/blas-base-csrot-wasm?branch=main
+[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-base-wasm-csrot/main.svg
+[coverage-url]: https://codecov.io/github/stdlib-js/blas-base-wasm-csrot?branch=main
 
 <!--
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/blas-base-csrot-wasm.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/blas-base-csrot-wasm/main
+[dependencies-image]: https://img.shields.io/david/stdlib-js/blas-base-wasm-csrot.svg
+[dependencies-url]: https://david-dm.org/stdlib-js/blas-base-wasm-csrot/main
 
 -->
 
@@ -559,15 +543,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
-[deno-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/tree/deno
-[deno-readme]: https://github.com/stdlib-js/blas-base-csrot-wasm/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/tree/umd
-[umd-readme]: https://github.com/stdlib-js/blas-base-csrot-wasm/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/tree/esm
-[esm-readme]: https://github.com/stdlib-js/blas-base-csrot-wasm/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/blob/main/branches.md
+[deno-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/tree/deno
+[deno-readme]: https://github.com/stdlib-js/blas-base-wasm-csrot/blob/deno/README.md
+[umd-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/tree/umd
+[umd-readme]: https://github.com/stdlib-js/blas-base-wasm-csrot/blob/umd/README.md
+[esm-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/tree/esm
+[esm-readme]: https://github.com/stdlib-js/blas-base-wasm-csrot/blob/esm/README.md
+[branches-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-base-csrot-wasm/main/LICENSE
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-base-wasm-csrot/main/LICENSE
 
 [blas]: http://www.netlib.org/blas
 
@@ -575,13 +559,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64/tree/umd
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
 
-[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory/tree/umd
+[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory
 
-[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper/tree/umd
+[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper
 
-[@stdlib/blas/base/csrot]: https://github.com/stdlib-js/blas-base-csrot/tree/umd
+[@stdlib/blas/base/csrot]: https://github.com/stdlib-js/blas-base-csrot
 
 </section>
 
