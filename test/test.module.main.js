@@ -173,7 +173,7 @@ tape( 'a module instance has a `main` method which supports an `x` stride', func
 	mod.write( cxp, cx );
 	mod.write( cyp, cy );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		3.0,
@@ -182,8 +182,8 @@ tape( 'a module instance has a `main` method which supports an `x` stride', func
 		4.8, // 2
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 1
 		-1.2, // 1
 		-3.0, // 2
@@ -192,7 +192,7 @@ tape( 'a module instance has a `main` method which supports an `x` stride', func
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	mod.main( 2, cxp, 2, cyp, 1, 0.8, 0.6 );
 
@@ -260,7 +260,7 @@ tape( 'a module instance has a `main` method which supports a `y` stride', funct
 	mod.write( cxp, cx );
 	mod.write( cyp, cy );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		2.4, // 2
@@ -269,8 +269,8 @@ tape( 'a module instance has a `main` method which supports a `y` stride', funct
 		6.0,
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 1
 		-1.2, // 1
 		0.0,
@@ -279,7 +279,7 @@ tape( 'a module instance has a `main` method which supports a `y` stride', funct
 		-2.4, // 2
 		0.0,
 		0.0
-	] );
+	]);
 
 	mod.main( 2, cxp, 1, cyp, 2, 0.8, 0.6 );
 
@@ -422,7 +422,7 @@ tape( 'a module instance has a `main` method which supports negative strides', f
 	mod.write( cxp, cx );
 	mod.write( cyp, cy );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 2
 		1.6, // 2
 		2.4, // 1
@@ -431,8 +431,8 @@ tape( 'a module instance has a `main` method which supports negative strides', f
 		6.0,
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 2
 		-1.2, // 2
 		0.0,
@@ -441,7 +441,7 @@ tape( 'a module instance has a `main` method which supports negative strides', f
 		-2.4, // 1
 		0.0,
 		0.0
-	] );
+	]);
 
 	mod.main( 2, cxp, -1, cyp, -2, 0.8, 0.6 );
 
@@ -509,7 +509,7 @@ tape( 'a module instance has a `main` method which supports complex access patte
 	mod.write( cxp, cx );
 	mod.write( cyp, cy );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		3.0,
@@ -518,8 +518,8 @@ tape( 'a module instance has a `main` method which supports complex access patte
 		4.8, // 2
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-3.0, // 2
 		-3.6, // 2
 		-0.6, // 1
@@ -528,7 +528,7 @@ tape( 'a module instance has a `main` method which supports complex access patte
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	mod.main( 2, cxp, 2, cyp, -1, 0.8, 0.6 );
 

@@ -4,13 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-11-22)
+## Unreleased (2025-02-06)
 
 <section class="features">
 
 ### Features
 
--   [`05aab7d`](https://github.com/stdlib-js/stdlib/commit/05aab7d99007e790e05e82509b50c63db761b49a) - add `blas/base/csrot-wasm` [(#3203)](https://github.com/stdlib-js/stdlib/pull/3203)
+-   [`4de4aff`](https://github.com/stdlib-js/stdlib/commit/4de4affbc7b2b1c84606700dc9b5d96bd2b57c9d) - add `blas/base/wasm/csrot`
 
 </section>
 
@@ -22,7 +22,7 @@
 
 <details>
 
--   [`05aab7d`](https://github.com/stdlib-js/stdlib/commit/05aab7d99007e790e05e82509b50c63db761b49a) - **feat:** add `blas/base/csrot-wasm` [(#3203)](https://github.com/stdlib-js/stdlib/pull/3203) _(by Aman Bhansali, Athan Reines)_
+-   [`4de4aff`](https://github.com/stdlib-js/stdlib/commit/4de4affbc7b2b1c84606700dc9b5d96bd2b57c9d) - **feat:** add `blas/base/wasm/csrot` _(by Athan Reines)_
 
 </details>
 
@@ -34,9 +34,8 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 1 person contributed to this release. Thank you to this contributor:
 
--   Aman Bhansali
 -   Athan Reines
 
 </section>

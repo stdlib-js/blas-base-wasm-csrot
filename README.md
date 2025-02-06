@@ -40,7 +40,7 @@ limitations under the License.
 ## Installation
 
 ```bash
-npm install @stdlib/blas-base-csrot-wasm
+npm install @stdlib/blas-base-wasm-csrot
 ```
 
 Alternatively,
@@ -60,7 +60,7 @@ To view installation and usage instructions specific to each branch build, be su
 ## Usage
 
 ```javascript
-var csrot = require( '@stdlib/blas-base-csrot-wasm' );
+var csrot = require( '@stdlib/blas-base-wasm-csrot' );
 ```
 
 #### csrot.main( N, cx, strideX, cy, strideY, c, s )
@@ -285,7 +285,7 @@ var zeros = require( '@stdlib/array-zeros' );
 var bytesPerElement = require( '@stdlib/ndarray-base-bytes-per-element' );
 var Complex64Array = require( '@stdlib/array-complex64' );
 var reinterpretComplex64 = require( '@stdlib/strided-base-reinterpret-complex64' );
-var csrot = require( '@stdlib/blas-base-csrot-wasm' );
+var csrot = require( '@stdlib/blas-base-wasm-csrot' );
 
 // Create a new memory instance with an initial size of 10 pages (320KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -359,7 +359,7 @@ var zeros = require( '@stdlib/array-zeros' );
 var bytesPerElement = require( '@stdlib/ndarray-base-bytes-per-element' );
 var Complex64Array = require( '@stdlib/array-complex64' );
 var reinterpretComplex64 = require( '@stdlib/strided-base-reinterpret-complex64' );
-var csrot = require( '@stdlib/blas-base-csrot-wasm' );
+var csrot = require( '@stdlib/blas-base-wasm-csrot' );
 
 // Create a new memory instance with an initial size of 10 pages (320KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -447,7 +447,7 @@ var ones = require( '@stdlib/array-ones' );
 var zeros = require( '@stdlib/array-zeros' );
 var Complex64Array = require( '@stdlib/array-complex64' );
 var reinterpretComplex64 = require( '@stdlib/strided-base-reinterpret-complex64' );
-var csrot = require( '@stdlib/blas-base-csrot-wasm' );
+var csrot = require( '@stdlib/blas-base-wasm-csrot' );
 
 // Specify a vector length:
 var N = 5;
@@ -507,7 +507,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -517,19 +517,19 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/blas-base-csrot-wasm.svg
-[npm-url]: https://npmjs.org/package/@stdlib/blas-base-csrot-wasm
+[npm-image]: http://img.shields.io/npm/v/@stdlib/blas-base-wasm-csrot.svg
+[npm-url]: https://npmjs.org/package/@stdlib/blas-base-wasm-csrot
 
-[test-image]: https://github.com/stdlib-js/blas-base-csrot-wasm/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/blas-base-wasm-csrot/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/actions/workflows/test.yml?query=branch:main
 
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-base-csrot-wasm/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/blas-base-csrot-wasm?branch=main
+[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-base-wasm-csrot/main.svg
+[coverage-url]: https://codecov.io/github/stdlib-js/blas-base-wasm-csrot?branch=main
 
 <!--
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/blas-base-csrot-wasm.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/blas-base-csrot-wasm/main
+[dependencies-image]: https://img.shields.io/david/stdlib-js/blas-base-wasm-csrot.svg
+[dependencies-url]: https://david-dm.org/stdlib-js/blas-base-wasm-csrot/main
 
 -->
 
@@ -543,15 +543,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
-[deno-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/tree/deno
-[deno-readme]: https://github.com/stdlib-js/blas-base-csrot-wasm/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/tree/umd
-[umd-readme]: https://github.com/stdlib-js/blas-base-csrot-wasm/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/tree/esm
-[esm-readme]: https://github.com/stdlib-js/blas-base-csrot-wasm/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/blob/main/branches.md
+[deno-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/tree/deno
+[deno-readme]: https://github.com/stdlib-js/blas-base-wasm-csrot/blob/deno/README.md
+[umd-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/tree/umd
+[umd-readme]: https://github.com/stdlib-js/blas-base-wasm-csrot/blob/umd/README.md
+[esm-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/tree/esm
+[esm-readme]: https://github.com/stdlib-js/blas-base-wasm-csrot/blob/esm/README.md
+[branches-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-base-csrot-wasm/main/LICENSE
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-base-wasm-csrot/main/LICENSE
 
 [blas]: http://www.netlib.org/blas
 

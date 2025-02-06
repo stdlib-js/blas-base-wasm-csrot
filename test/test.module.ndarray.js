@@ -173,7 +173,7 @@ tape( 'a module instance has an `ndarray` method which supports an `x` stride', 
 	mod.write( cxp, cx );
 	mod.write( cyp, cy );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		3.0,
@@ -182,8 +182,8 @@ tape( 'a module instance has an `ndarray` method which supports an `x` stride', 
 		4.8, // 2
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 1
 		-1.2, // 1
 		-3.0, // 2
@@ -192,7 +192,7 @@ tape( 'a module instance has an `ndarray` method which supports an `x` stride', 
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	mod.ndarray( 2, cxp, 2, 0, cyp, 1, 0, 0.8, 0.6 );
 
@@ -260,7 +260,7 @@ tape( 'a module instance has an `ndarray` method which supports an `x` offset', 
 	mod.write( cxp, cx );
 	mod.write( cyp, cy );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		1.0,
 		2.0,
 		2.4, // 1
@@ -269,8 +269,8 @@ tape( 'a module instance has an `ndarray` method which supports an `x` offset', 
 		4.8, // 2
 		5.6, // 3
 		6.4  // 3
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-1.8, // 1
 		-2.4, // 1
 		-3.0, // 2
@@ -279,7 +279,7 @@ tape( 'a module instance has an `ndarray` method which supports an `x` offset', 
 		-4.8, // 3
 		0.0,
 		0.0
-	] );
+	]);
 
 	mod.ndarray( 3, cxp, 1, 1, cyp, 1, 0, 0.8, 0.6 );
 
@@ -347,7 +347,7 @@ tape( 'a module instance has an `ndarray` method which supports a `y` stride', f
 	mod.write( cxp, cx );
 	mod.write( cyp, cy );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		2.4, // 2
@@ -356,8 +356,8 @@ tape( 'a module instance has an `ndarray` method which supports a `y` stride', f
 		6.0,
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 1
 		-1.2, // 1
 		0.0,
@@ -366,7 +366,7 @@ tape( 'a module instance has an `ndarray` method which supports a `y` stride', f
 		-2.4, // 2
 		0.0,
 		0.0
-	] );
+	]);
 
 	mod.ndarray( 2, cxp, 1, 0, cyp, 2, 0, 0.8, 0.6 );
 
@@ -434,7 +434,7 @@ tape( 'a module instance has an `ndarray` method which supports a `y` offset', f
 	mod.write( cxp, cx );
 	mod.write( cyp, cy );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		3.0,
@@ -443,8 +443,8 @@ tape( 'a module instance has an `ndarray` method which supports a `y` offset', f
 		4.8, // 2
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-3.0, // 2
 		-3.6, // 2
 		-0.6, // 1
@@ -453,7 +453,7 @@ tape( 'a module instance has an `ndarray` method which supports a `y` offset', f
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	mod.ndarray( 2, cxp, 2, 0, cyp, -1, 1, 0.8, 0.6 );
 
@@ -596,7 +596,7 @@ tape( 'a module instance has an `ndarray` method which supports negative strides
 	mod.write( cxp, cx );
 	mod.write( cyp, cy );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 2
 		1.6, // 2
 		2.4, // 1
@@ -605,8 +605,8 @@ tape( 'a module instance has an `ndarray` method which supports negative strides
 		6.0,
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 2
 		-1.2, // 2
 		0.0,
@@ -615,7 +615,7 @@ tape( 'a module instance has an `ndarray` method which supports negative strides
 		-2.4, // 1
 		0.0,
 		0.0
-	] );
+	]);
 
 	mod.ndarray( 2, cxp, -1, 1, cyp, -2, 2, 0.8, 0.6 );
 
@@ -683,7 +683,7 @@ tape( 'a module instance has an `ndarray` method which supports complex access p
 	mod.write( cxp, cx );
 	mod.write( cyp, cy );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		3.0,
@@ -692,8 +692,8 @@ tape( 'a module instance has an `ndarray` method which supports complex access p
 		4.8, // 2
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-3.0, // 2
 		-3.6, // 2
 		-0.6, // 1
@@ -702,7 +702,7 @@ tape( 'a module instance has an `ndarray` method which supports complex access p
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	mod.ndarray( 2, cxp, 2, 0, cyp, -1, 1, 0.8, 0.6 );
 

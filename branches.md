@@ -38,19 +38,19 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/base/csrot-wasm"
-%% click B href "https://github.com/stdlib-js/blas-base-csrot-wasm/tree/main"
-%% click C href "https://github.com/stdlib-js/blas-base-csrot-wasm/tree/production"
-%% click D href "https://github.com/stdlib-js/blas-base-csrot-wasm/tree/esm"
-%% click E href "https://github.com/stdlib-js/blas-base-csrot-wasm/tree/deno"
-%% click F href "https://github.com/stdlib-js/blas-base-csrot-wasm/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/base/wasm/csrot"
+%% click B href "https://github.com/stdlib-js/blas-base-wasm-csrot/tree/main"
+%% click C href "https://github.com/stdlib-js/blas-base-wasm-csrot/tree/production"
+%% click D href "https://github.com/stdlib-js/blas-base-wasm-csrot/tree/esm"
+%% click E href "https://github.com/stdlib-js/blas-base-wasm-csrot/tree/deno"
+%% click F href "https://github.com/stdlib-js/blas-base-wasm-csrot/tree/umd"
 ```
 
-[stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/base/csrot-wasm
-[production-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/tree/production
-[deno-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/tree/deno
-[deno-readme]: https://github.com/stdlib-js/blas-base-csrot-wasm/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/tree/umd
-[umd-readme]: https://github.com/stdlib-js/blas-base-csrot-wasm/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/blas-base-csrot-wasm/tree/esm
-[esm-readme]: https://github.com/stdlib-js/blas-base-csrot-wasm/blob/esm/README.md
+[stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/base/wasm/csrot
+[production-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/tree/production
+[deno-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/tree/deno
+[deno-readme]: https://github.com/stdlib-js/blas-base-wasm-csrot/blob/deno/README.md
+[umd-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/tree/umd
+[umd-readme]: https://github.com/stdlib-js/blas-base-wasm-csrot/blob/umd/README.md
+[esm-url]: https://github.com/stdlib-js/blas-base-wasm-csrot/tree/esm
+[esm-readme]: https://github.com/stdlib-js/blas-base-wasm-csrot/blob/esm/README.md

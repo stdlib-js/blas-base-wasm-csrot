@@ -79,7 +79,7 @@ tape( 'the `main` method applies a plane rotation', function test( t ) {
 	var cx;
 	var cy;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		1.0, // 1
 		2.0, // 1
 		3.0, // 2
@@ -88,8 +88,8 @@ tape( 'the `main` method applies a plane rotation', function test( t ) {
 		6.0, // 3
 		7.0, // 4
 		8.0  // 4
-	] );
-	cy = new Complex64Array( [
+	]);
+	cy = new Complex64Array([
 		0.0, // 1
 		0.0, // 1
 		0.0, // 2
@@ -98,12 +98,12 @@ tape( 'the `main` method applies a plane rotation', function test( t ) {
 		0.0, // 3
 		0.0, // 4
 		0.0  // 4
-	] );
+	]);
 
 	viewX = new Float32Array( cx.buffer );
 	viewY = new Float32Array( cy.buffer );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		2.4, // 2
@@ -112,8 +112,8 @@ tape( 'the `main` method applies a plane rotation', function test( t ) {
 		4.8, // 3
 		5.6, // 4
 		6.4  // 4
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 1
 		-1.2, // 1
 		-1.8, // 2
@@ -122,7 +122,7 @@ tape( 'the `main` method applies a plane rotation', function test( t ) {
 		-3.6, // 3
 		-4.2, // 4
 		-4.8  // 4
-	] );
+	]);
 
 	out = csrot.main( cx.length, cx, 1, cy, 1, 0.8, 0.6 );
 	isApprox( t, viewX, cxe, 2.0 );
@@ -140,7 +140,7 @@ tape( 'the `main` method supports an `x` stride', function test( t ) {
 	var cx;
 	var cy;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		1.0, // 1
 		2.0, // 1
 		3.0,
@@ -149,8 +149,8 @@ tape( 'the `main` method supports an `x` stride', function test( t ) {
 		6.0, // 2
 		7.0,
 		8.0
-	] );
-	cy = new Complex64Array( [
+	]);
+	cy = new Complex64Array([
 		0.0, // 1
 		0.0, // 1
 		0.0, // 2
@@ -159,12 +159,12 @@ tape( 'the `main` method supports an `x` stride', function test( t ) {
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	viewX = new Float32Array( cx.buffer );
 	viewY = new Float32Array( cy.buffer );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		3.0,
@@ -173,8 +173,8 @@ tape( 'the `main` method supports an `x` stride', function test( t ) {
 		4.8, // 2
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 1
 		-1.2, // 1
 		-3.0, // 2
@@ -183,7 +183,7 @@ tape( 'the `main` method supports an `x` stride', function test( t ) {
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	out = csrot.main( 2, cx, 2, cy, 1, 0.8, 0.6 );
 	isApprox( t, viewX, cxe, 2.0 );
@@ -201,7 +201,7 @@ tape( 'the `main` method supports a `y` stride', function test( t ) {
 	var cx;
 	var cy;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		1.0, // 1
 		2.0, // 1
 		3.0, // 2
@@ -210,8 +210,8 @@ tape( 'the `main` method supports a `y` stride', function test( t ) {
 		6.0,
 		7.0,
 		8.0
-	] );
-	cy = new Complex64Array( [
+	]);
+	cy = new Complex64Array([
 		0.0, // 1
 		0.0, // 1
 		0.0,
@@ -220,12 +220,12 @@ tape( 'the `main` method supports a `y` stride', function test( t ) {
 		0.0, // 2
 		0.0,
 		0.0
-	] );
+	]);
 
 	viewX = new Float32Array( cx.buffer );
 	viewY = new Float32Array( cy.buffer );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		2.4, // 2
@@ -234,8 +234,8 @@ tape( 'the `main` method supports a `y` stride', function test( t ) {
 		6.0,
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 1
 		-1.2, // 1
 		0.0,
@@ -244,7 +244,7 @@ tape( 'the `main` method supports a `y` stride', function test( t ) {
 		-2.4, // 2
 		0.0,
 		0.0
-	] );
+	]);
 
 	out = csrot.main( 2, cx, 1, cy, 2, 0.8, 0.6 );
 	isApprox( t, viewX, cxe, 2.0 );
@@ -304,7 +304,7 @@ tape( 'the `main` method supports negative strides', function test( t ) {
 	var cx;
 	var cy;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		1.0, // 2
 		2.0, // 2
 		3.0, // 1
@@ -313,8 +313,8 @@ tape( 'the `main` method supports negative strides', function test( t ) {
 		6.0,
 		7.0,
 		8.0
-	] );
-	cy = new Complex64Array( [
+	]);
+	cy = new Complex64Array([
 		0.0, // 2
 		0.0, // 2
 		0.0,
@@ -323,12 +323,12 @@ tape( 'the `main` method supports negative strides', function test( t ) {
 		0.0, // 1
 		0.0,
 		0.0
-	] );
+	]);
 
 	viewX = new Float32Array( cx.buffer );
 	viewY = new Float32Array( cy.buffer );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 2
 		1.6, // 2
 		2.4, // 1
@@ -337,8 +337,8 @@ tape( 'the `main` method supports negative strides', function test( t ) {
 		6.0,
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 2
 		-1.2, // 2
 		0.0,
@@ -347,7 +347,7 @@ tape( 'the `main` method supports negative strides', function test( t ) {
 		-2.4, // 1
 		0.0,
 		0.0
-	] );
+	]);
 
 	out = csrot.main( 2, cx, -1, cy, -2, 0.8, 0.6 );
 	isApprox( t, viewX, cxe, 2.0 );
@@ -365,7 +365,7 @@ tape( 'the `main` method supports complex access patterns', function test( t ) {
 	var cx;
 	var cy;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		1.0, // 1
 		2.0, // 1
 		3.0,
@@ -374,8 +374,8 @@ tape( 'the `main` method supports complex access patterns', function test( t ) {
 		6.0, // 2
 		7.0,
 		8.0
-	] );
-	cy = new Complex64Array( [
+	]);
+	cy = new Complex64Array([
 		0.0, // 2
 		0.0, // 2
 		0.0, // 1
@@ -384,12 +384,12 @@ tape( 'the `main` method supports complex access patterns', function test( t ) {
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	viewX = new Float32Array( cx.buffer );
 	viewY = new Float32Array( cy.buffer );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		3.0,
@@ -398,8 +398,8 @@ tape( 'the `main` method supports complex access patterns', function test( t ) {
 		4.8, // 2
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-3.0, // 2
 		-3.6, // 2
 		-0.6, // 1
@@ -408,7 +408,7 @@ tape( 'the `main` method supports complex access patterns', function test( t ) {
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	out = csrot.main( 2, cx, 2, cy, -1, 0.8, 0.6 );
 	isApprox( t, viewX, cxe, 2.0 );
@@ -457,7 +457,7 @@ tape( 'the `main` method supports view offsets', function test( t ) {
 	viewX = new Float32Array( cx0.buffer );
 	viewY = new Float32Array( cy0.buffer );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		1.0,
 		2.0,
 		2.4, // 2
@@ -466,8 +466,8 @@ tape( 'the `main` method supports view offsets', function test( t ) {
 		6.0,
 		5.6, // 1
 		6.4  // 1
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		0.0,
 		0.0,
 		0.0,
@@ -476,7 +476,7 @@ tape( 'the `main` method supports view offsets', function test( t ) {
 		-4.8, // 1
 		-1.8, // 2
 		-2.4  // 2
-	] );
+	]);
 
 	out = csrot.main( 2, cx1, -2, cy1, 1, 0.8, 0.6 );
 	isApprox( t, viewX, cxe, 2.0 );

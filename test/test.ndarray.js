@@ -79,7 +79,7 @@ tape( 'the `ndarray` method applies a plane rotation', function test( t ) {
 	var cx;
 	var cy;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		1.0, // 1
 		2.0, // 1
 		3.0, // 2
@@ -88,8 +88,8 @@ tape( 'the `ndarray` method applies a plane rotation', function test( t ) {
 		6.0, // 3
 		7.0, // 4
 		8.0  // 4
-	] );
-	cy = new Complex64Array( [
+	]);
+	cy = new Complex64Array([
 		0.0, // 1
 		0.0, // 1
 		0.0, // 2
@@ -98,12 +98,12 @@ tape( 'the `ndarray` method applies a plane rotation', function test( t ) {
 		0.0, // 3
 		0.0, // 4
 		0.0  // 4
-	] );
+	]);
 
 	viewX = new Float32Array( cx.buffer );
 	viewY = new Float32Array( cy.buffer );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		2.4, // 2
@@ -112,8 +112,8 @@ tape( 'the `ndarray` method applies a plane rotation', function test( t ) {
 		4.8, // 3
 		5.6, // 4
 		6.4  // 4
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 1
 		-1.2, // 1
 		-1.8, // 2
@@ -122,7 +122,7 @@ tape( 'the `ndarray` method applies a plane rotation', function test( t ) {
 		-3.6, // 3
 		-4.2, // 4
 		-4.8  // 4
-	] );
+	]);
 
 	out = csrot.ndarray( cx.length, cx, 1, 0, cy, 1, 0, 0.8, 0.6 );
 	isApprox( t, viewX, cxe, 2.0 );
@@ -140,7 +140,7 @@ tape( 'the `ndarray` method supports an `x` stride', function test( t ) {
 	var cx;
 	var cy;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		1.0, // 1
 		2.0, // 1
 		3.0,
@@ -149,8 +149,8 @@ tape( 'the `ndarray` method supports an `x` stride', function test( t ) {
 		6.0, // 2
 		7.0,
 		8.0
-	] );
-	cy = new Complex64Array( [
+	]);
+	cy = new Complex64Array([
 		0.0, // 1
 		0.0, // 1
 		0.0, // 2
@@ -159,12 +159,12 @@ tape( 'the `ndarray` method supports an `x` stride', function test( t ) {
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	viewX = new Float32Array( cx.buffer );
 	viewY = new Float32Array( cy.buffer );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		3.0,
@@ -173,8 +173,8 @@ tape( 'the `ndarray` method supports an `x` stride', function test( t ) {
 		4.8, // 2
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 1
 		-1.2, // 1
 		-3.0, // 2
@@ -183,7 +183,7 @@ tape( 'the `ndarray` method supports an `x` stride', function test( t ) {
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	out = csrot.ndarray( 2, cx, 2, 0, cy, 1, 0, 0.8, 0.6 );
 	isApprox( t, viewX, cxe, 2.0 );
@@ -201,7 +201,7 @@ tape( 'the `ndarray` method supports an `x` offset', function test( t ) {
 	var cx;
 	var cy;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		1.0,
 		2.0,
 		3.0, // 1
@@ -210,8 +210,8 @@ tape( 'the `ndarray` method supports an `x` offset', function test( t ) {
 		6.0, // 2
 		7.0, // 3
 		8.0  // 3
-	] );
-	cy = new Complex64Array( [
+	]);
+	cy = new Complex64Array([
 		0.0, // 1
 		0.0, // 1
 		0.0, // 2
@@ -220,12 +220,12 @@ tape( 'the `ndarray` method supports an `x` offset', function test( t ) {
 		0.0, // 3
 		0.0,
 		0.0
-	] );
+	]);
 
 	viewX = new Float32Array( cx.buffer );
 	viewY = new Float32Array( cy.buffer );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		1.0,
 		2.0,
 		2.4, // 1
@@ -234,8 +234,8 @@ tape( 'the `ndarray` method supports an `x` offset', function test( t ) {
 		4.8, // 2
 		5.6, // 3
 		6.4  // 3
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-1.8, // 1
 		-2.4, // 1
 		-3.0, // 2
@@ -244,7 +244,7 @@ tape( 'the `ndarray` method supports an `x` offset', function test( t ) {
 		-4.8, // 3
 		0.0,
 		0.0
-	] );
+	]);
 
 	out = csrot.ndarray( 3, cx, 1, 1, cy, 1, 0, 0.8, 0.6 );
 	isApprox( t, viewX, cxe, 2.0 );
@@ -262,7 +262,7 @@ tape( 'the `ndarray` method supports a `y` stride', function test( t ) {
 	var cx;
 	var cy;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		1.0, // 1
 		2.0, // 1
 		3.0, // 2
@@ -271,8 +271,8 @@ tape( 'the `ndarray` method supports a `y` stride', function test( t ) {
 		6.0,
 		7.0,
 		8.0
-	] );
-	cy = new Complex64Array( [
+	]);
+	cy = new Complex64Array([
 		0.0, // 1
 		0.0, // 1
 		0.0,
@@ -281,12 +281,12 @@ tape( 'the `ndarray` method supports a `y` stride', function test( t ) {
 		0.0, // 2
 		0.0,
 		0.0
-	] );
+	]);
 
 	viewX = new Float32Array( cx.buffer );
 	viewY = new Float32Array( cy.buffer );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		2.4, // 2
@@ -295,8 +295,8 @@ tape( 'the `ndarray` method supports a `y` stride', function test( t ) {
 		6.0,
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 1
 		-1.2, // 1
 		0.0,
@@ -305,7 +305,7 @@ tape( 'the `ndarray` method supports a `y` stride', function test( t ) {
 		-2.4, // 2
 		0.0,
 		0.0
-	] );
+	]);
 
 	out = csrot.ndarray( 2, cx, 1, 0, cy, 2, 0, 0.8, 0.6 );
 	isApprox( t, viewX, cxe, 2.0 );
@@ -323,7 +323,7 @@ tape( 'the `ndarray` method supports a `y` offset', function test( t ) {
 	var cx;
 	var cy;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		1.0, // 1
 		2.0, // 1
 		3.0,
@@ -332,8 +332,8 @@ tape( 'the `ndarray` method supports a `y` offset', function test( t ) {
 		6.0, // 2
 		7.0,
 		8.0
-	] );
-	cy = new Complex64Array( [
+	]);
+	cy = new Complex64Array([
 		0.0, // 2
 		0.0, // 2
 		0.0, // 1
@@ -342,12 +342,12 @@ tape( 'the `ndarray` method supports a `y` offset', function test( t ) {
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	viewX = new Float32Array( cx.buffer );
 	viewY = new Float32Array( cy.buffer );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 1
 		1.6, // 1
 		3.0,
@@ -356,8 +356,8 @@ tape( 'the `ndarray` method supports a `y` offset', function test( t ) {
 		4.8, // 2
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-3.0, // 2
 		-3.6, // 2
 		-0.6, // 1
@@ -366,7 +366,7 @@ tape( 'the `ndarray` method supports a `y` offset', function test( t ) {
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	out = csrot.ndarray( 2, cx, 2, 0, cy, -1, 1, 0.8, 0.6 );
 	isApprox( t, viewX, cxe, 2.0 );
@@ -426,7 +426,7 @@ tape( 'the `ndarray` method supports negative strides', function test( t ) {
 	var cx;
 	var cy;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		1.0, // 2
 		2.0, // 2
 		3.0, // 1
@@ -435,8 +435,8 @@ tape( 'the `ndarray` method supports negative strides', function test( t ) {
 		6.0,
 		7.0,
 		8.0
-	] );
-	cy = new Complex64Array( [
+	]);
+	cy = new Complex64Array([
 		0.0, // 2
 		0.0, // 2
 		0.0,
@@ -445,12 +445,12 @@ tape( 'the `ndarray` method supports negative strides', function test( t ) {
 		0.0, // 1
 		0.0,
 		0.0
-	] );
+	]);
 
 	viewX = new Float32Array( cx.buffer );
 	viewY = new Float32Array( cy.buffer );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.8, // 2
 		1.6, // 2
 		2.4, // 1
@@ -459,8 +459,8 @@ tape( 'the `ndarray` method supports negative strides', function test( t ) {
 		6.0,
 		7.0,
 		8.0
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		-0.6, // 2
 		-1.2, // 2
 		0.0,
@@ -469,7 +469,7 @@ tape( 'the `ndarray` method supports negative strides', function test( t ) {
 		-2.4, // 1
 		0.0,
 		0.0
-	] );
+	]);
 
 	out = csrot.ndarray( 2, cx, -1, 1, cy, -2, 2, 0.8, 0.6 );
 	isApprox( t, viewX, cxe, 2.0 );
@@ -487,7 +487,7 @@ tape( 'the `ndarray` method supports complex access patterns', function test( t 
 	var cx;
 	var cy;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		1.0, // 1
 		2.0, // 1
 		3.0,
@@ -496,8 +496,8 @@ tape( 'the `ndarray` method supports complex access patterns', function test( t 
 		6.0, // 2
 		7.0,
 		8.0
-	] );
-	cy = new Complex64Array( [
+	]);
+	cy = new Complex64Array([
 		0.0, // 1
 		0.0, // 1
 		0.0, // 2
@@ -506,12 +506,12 @@ tape( 'the `ndarray` method supports complex access patterns', function test( t 
 		0.0,
 		0.0,
 		0.0
-	] );
+	]);
 
 	viewX = new Float32Array( cx.buffer );
 	viewY = new Float32Array( cy.buffer );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		1.0,
 		2.0,
 		2.4, // 1
@@ -520,8 +520,8 @@ tape( 'the `ndarray` method supports complex access patterns', function test( t 
 		6.0,
 		5.6, // 2
 		6.4  // 2
-	] );
-	cye = new Float32Array( [
+	]);
+	cye = new Float32Array([
 		0.0,
 		0.0,
 		0.0,
@@ -530,7 +530,7 @@ tape( 'the `ndarray` method supports complex access patterns', function test( t 
 		-2.4, // 1
 		-4.2, // 2
 		-4.8  // 2
-	] );
+	]);
 
 	out = csrot.ndarray( 2, cx, 2, 1, cy, 1, 2, 0.8, 0.6 );
 	isApprox( t, viewX, cxe, 2.0 );
