@@ -351,7 +351,6 @@ The function has the following additional parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var hasWebAssemblySupport = require( '@stdlib/assert-has-wasm-support' );
 var oneTo = require( '@stdlib/array-one-to' );
 var ones = require( '@stdlib/array-ones' );
 var zeros = require( '@stdlib/array-zeros' );
