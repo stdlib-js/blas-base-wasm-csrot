@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`73e4725`](https://github.com/stdlib-js/stdlib/commit/73e4725ad922926de4747c08a8121c99ef8a548d) - **style:** remove extraneous empty line _(by Philipp Burckhardt)_
 -   [`8ece787`](https://github.com/stdlib-js/stdlib/commit/8ece787eae84c27b4018185aaba3371eea94fa99) - **fix:** ensure correct `this` context when creating a new Module instance _(by Philipp Burckhardt)_
 -   [`69ad0f3`](https://github.com/stdlib-js/stdlib/commit/69ad0f330677990bab1fe157e167998d94a58eea) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`ec426b1`](https://github.com/stdlib-js/stdlib/commit/ec426b1d27b6f530cd9a15dc0f95c319fda38ac7) - **test:** update test descriptions _(by Athan Reines)_
